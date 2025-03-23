@@ -1,0 +1,775 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F8F9FF;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo-exit {
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #5656F1, #00BFFF);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar-nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.navbar-nav a.active {
+    background-color: #0000FF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.PR-title {
+    font-size: 1.2em;
+    color: #2147dc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1.4px solid #2147dc;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    /* flex-grow: 1; */
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    display: fixed;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin: 15px 0;
+}
+
+.sidebar-nav a {
+    color: #B1B1B1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.sidebar-nav a.active {
+    background-color: #2D60FF;
+    /* Warna latar belakang biru untuk link aktif */
+    color: #fff;
+    /* Warna teks putih untuk link aktif */
+    font-weight: bold;
+    /* Menebalkan teks untuk menonjolkan link aktif */
+}
+
+.sidebar-nav a.active:hover {
+    background-color: #1A4BB1;
+    /* Warna latar belakang saat hover pada link aktif */
+    color: #fff;
+    /* Warna teks tetap putih */
+}
+
+.sidebar-nav a:hover {
+    background-color: #bbc8ee;
+    color: #2D60FF;
+}
+
+.sidebar-nav a.active {
+    color: #ffffff;
+    background-color: #2D60FF;
+    font-weight: bold;
+
+}
+
+.main-content {
+    /* margin-left: 250px; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    padding-top: 20px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.white-box {
+    background-color: #ffffff;
+    height: 75px;
+    margin: -20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1)
+}
+
+.white-box h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.search-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.search-input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.search-button {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 8px;
+}
+
+.search-button:hover {
+    background-color: #0000FF;
+}
+
+.button-container {
+    display: flex;
+}
+
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: white;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: rgb(20, 50, 185);
+}
+
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: #2D60FF;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.Btn:hover {
+    background-color: #ffffff;
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+    border: 2px solid white;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 20px;
+}
+
+.Btn:hover .sign svg path {
+    fill: #2D60FF;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+}
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+.icon,
+.Iconajuan,
+.kerjasama,
+.riwayat,
+.user,
+.acc {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    transition: fill 0.3s;
+}
+
+.create-button-container {
+    text-align: center;
+    /* Pusatkan tombol */
+    margin-top: 20px;
+    /* Tambahkan margin atas untuk jarak */
+}
+
+.footer {
+    background-color: #516BF4;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+}
+
+.btn-review {
+    background-color: #B9B9FF;
+    box-shadow: none;
+    border-radius: 12px;
+    border-color: #B9B9FF;
+    padding: 12px 20px;
+    margin: 50px 0px 0px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2D60FF;
+    outline: none; 
+}
+
+.btn-banding {
+    background-color: #FFCFA0;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 50px 0px 0px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FF8913;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: #FFCFA0;
+}
+
+.btn-diterima {
+    background-color: #D8FFDF;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 50px 0px 0px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0FC821;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: #D8FFDF;
+}
+
+.btn-ditolak {
+    background-color: #FC9797;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 50px 0px 0px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FF0000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: #FC9797;
+}
+
+.btn-review.active {
+    border-color: #2D60FF;
+}
+
+.btn-banding.active {
+    border-color: #FF8913;
+}
+
+.btn-diterima.active {
+    border-color: #0FC821;
+}
+
+.btn-ditolak.active {
+    border-color: #FF0000;
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Untuk meeting */
+.btn-custom {
+    color: white;
+    text-decoration: none; 
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin :50px 0px 0px 20px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom.active {
+    background-color: #5656F1; 
+}
+
+.btn-custom {
+    background-color: #C5C5CF; /* Warna abu-abu untuk tombol tidak aktif */
+}
+
+
+
+.table {
+    width: 90%;
+    /* Full width */
+    border-collapse: collapse;
+    /* Remove space between cells */
+    margin: 20px;
+
+}
+
+.table thead {
+    background-color: #f2f2f2;
+    /* Light background for the header */
+    color: #333;
+    /* Dark text color for the header */
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    /* Light border for cells */
+    padding: 12px;
+    /* Padding inside cells */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.table th {
+    font-weight: bold;
+    /* Bold text for header */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Light gray background for even rows */
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+    /* Light background on row hover */
+}
+
+.table td {
+    vertical-align: middle;
+    /* Center align content vertically */
+}
+
+.form {
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    /* Buat kolom kiri dan kanan berjarak */
+    gap: 50px;
+    /* Berikan jarak antar kolom */
+    flex-wrap: wrap;
+    /* Pastikan elemen menyesuaikan jika layar sempit */
+}
+
+.form-column {
+    flex: 1;
+    /* Setiap kolom mengambil ruang yang sama */
+    min-width: 300px;
+    /* Lebar minimum kolom */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.date-row {
+    display: flex;
+    gap: 20px;
+    /* Jarak antar kolom */
+}
+
+.date-column {
+    flex: 1;
+    /* Kolom sama lebar */
+}
+
+.date-column small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    /* Warna teks tambahan */
+    font-size: 12px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    /* Vertikal sejajar */
+    padding: 50px;
+}
+
+.flex-container a {
+    margin-right: 10px;
+    /* Jarak antara tombol dan teks */
+    display: flex;
+    /* Pastikan anak elemen mengikuti tata letak flex */
+    align-items: center;
+    /* Pusatkan ikon secara vertikal */
+}
+
+.btn-back {
+    width: 30px;
+    height: auto;
+    margin: 0;
+    /* Atur margin jika diperlukan */
+    padding: 0;
+}
+
+.table-container {
+    overflow-y: y;
+    margin: 20px 0px 0px 10px;
+}
+
+/* Gaya untuk tombol "Lihat Detail" */
+.btn-detail {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2D60FF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-detail:hover {
+    background-color: #1B48CC;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-detail:active {
+    background-color: #163A9E;
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya umum untuk status */
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 12px;
+    text-transform: capitalize;
+}
+
+.status.menunggu {
+    background-color: #ffffff; 
+    color:grey;
+    border: 2px solid grey;
+}
+
+.status.ditolak {
+    background-color: #ffffff; 
+    color:#FF0000;
+    border: 2px solid #FF0000;
+}
+
+.status.diterima { 
+    background-color: #ffffff; 
+    color:#0FC821;
+    border: 2px solid #0FC821;
+}
+
+.status.banding{
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.status.review{
+    background-color: #ffffff; 
+    color:#0000FF;
+    border: 2px solid #0000FF;
+}
+
+/* Form Styles */
+.form {
+    padding: 10px 0;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 240px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+.form-buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    background-color: #5656F1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Style untuk Modal */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1; /* Menampilkan modal di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Menyediakan scroll jika modal besar */
+    background-color: rgba(0, 0, 0, 0.4); /* Latar belakang transparan */
+}
+
+/* Konten modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    border-radius: 12px;
+}
+
+.modal-content h3 {
+    background-color: #5656F1;
+    color: #fff;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+/* Section Styling for Details */
+.details-section {
+    border: 2px solid #2D60FF; /* Blue border */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Style for Each Detail Item */
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-item strong {
+    color: black; 
+    font-weight: bold;
+}
+
+.btn-view-doc {
+    display: inline-block;
+    background-color: #2D60FF; 
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+    margin-top: 10px;
+}
+
+.btn-view-doc:hover {
+    background-color: #1A46D4; 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-column {
+        width: 100%;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+.btn-custom {
+    background-color: #5656F1;
+    color: white;
+    text-decoration: none; /* Removes underline */
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin :50px 550px 0px 50px;
+
+}
+
+.btn-custom:hover {
+    background-color: #4747C1; /* Optional: Change color on hover */
+}
+
+.d-flex {
+    display: flex; 
+    align-items: center; 
+}
+
+.search-form {
+    display: flex;
+    align-items: center; 
+    margin :50px 0px 0px 0px;
+}
+
+.search-input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 12px; 
+    margin-right: 0px; 
+}
+
+.search-button {
+    padding: 10px 15px; /* Padding untuk button */
+    background-color: #007bff; /* Warna latar belakang button */
+    color: white; /* Warna teks button */
+    border: none; /* Menghapus border default */
+    border-radius: 12px; /* Sudut button yang membulat */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.table {
+    width: 90%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+    margin: 20px; 
+
+}
+
+.table thead {
+    background-color: #f2f2f2; /* Light background for the header */
+    color: #333; /* Dark text color for the header */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    font-weight: bold; /* Bold text for header */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.table tr:hover {
+    background-color: #f1f1f1; /* Light background on row hover */
+}
+
+.table td {
+    vertical-align: middle; /* Center align content vertically */
+}

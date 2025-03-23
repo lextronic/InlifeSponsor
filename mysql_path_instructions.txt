@@ -1,0 +1,18 @@
+To resolve the issue of the 'mysql' command not being recognized, please follow these steps to add MySQL to your system's PATH:
+
+1. **Find the MySQL Installation Directory**:
+   - The default installation path for MySQL is usually `C:\Program Files\MySQL\MySQL Server 8.0\bin`. If you installed it in a different location, locate the `bin` directory where `mysql.exe` is located.
+
+2. **Add to System PATH**:
+   - Right-click on "This PC" or "Computer" on your desktop or in File Explorer and select "Properties."
+   - Click on "Advanced system settings."
+   - In the System Properties window, click on the "Environment Variables" button.
+   - In the Environment Variables window, find the "Path" variable in the "System variables" section and select it, then click "Edit."
+   - Click "New" and add the path to the MySQL `bin` directory (e.g., `C:\Program Files\MySQL\MySQL Server 8.0\bin`).
+   - Click "OK" to close all dialog boxes.
+
+3. **Restart Command Prompt**:
+   - After making these changes, close any open Command Prompt windows and open a new one.
+
+4. **Test the Command**:
+   - Type `mysql --version` in the new Command Prompt window to check if the command is now recognized.

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: white;
+    border-radius: 5px;
+    border-color: #516BF4;
+    border-style:double;
+}
+
+
+.btn-outline-secondary { 
+    background-color: white;
+    border: 1px solid #ccc; 
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #516BF4; 
+}
+
+.btn-outline-secondary.active {
+    background-color: #c0c0c0; /* Warna latar belakang saat aktif (ketika password ditampilkan) */
+}
+
+.form-width {
+    width: 500px; /* Atur lebar sesuai kebutuhan */
+    max-width: 100%; /* Pastikan responsif */
+    margin : 30px 0px 0px 435px;
+}
